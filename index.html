@@ -198,38 +198,46 @@
     
           <!-- Imagem principal -->
           <div class="md:py-10">
-            <img src="assets/evento.webp" alt="Evento principal" class="mx-auto shadow-lg rounded-md py-10 md:py-0" />
+            <iframe class="mx-auto shadow-lg rounded-md py-10 md:py-0" width="1075" height="576" src="https://www.youtube.com/embed/Td2lLtU0cNs?si=BrnJcxbJ1skOUXQ7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
     
+          <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 hidden">
+            <div class="relative">
+              <button onclick="closeModal()" class="absolute top-2 right-2 text-white text-2xl">&times;</button>
+              <img id="modalImage" src="" class="max-w-[90vw] max-h-[90vh] rounded-lg shadow-lg" />
+            </div>
+          </div>
+          
+          <!-- GALERIA -->
           <div class="grid grid-cols-8 gap-2 md:gap-4 px-4">
-            <img src="/cards/jayme2.jpg" class="col-span-2  w-full object-cover rounded" />
-  <img src="/cards/flor.jpg" class="col-span-2 w-full object-cover rounded" />
-  <img src="cards/bmouse.jpg" class="col-span-2 w-full object-cover rounded" />
-  <img src="/cards/vr.jpg" class="col-span-2  w-full object-cover rounded" />
-  </div>
-    
-  <div class="grid grid-cols-7 gap-2 md:gap-4 px-4 pt-3">
-  <img src="cards/inove.jpg" class="col-span-2 w-full object-cover rounded" />
-    <img src="/cards/povo.jpg" class="col-span-2  w-full object-cover rounded" />
-    <img src="/cards/palestra.jpg" class="col-span-1  w-full object-cover rounded" />
-    <img src="cards/plateia.jpg" class="col-span-2 w-full object-cover rounded" />
-  </div>
-
-              
-  <div class="grid grid-cols-8 gap-2 md:gap-4 px-4 pt-3">
-    <img src="cards/palestra2.jpg" class="col-span-2 w-full object-cover rounded" />
-    <img src="/cards/tom-palesta-micro.jpg" class="col-span-1  w-full object-cover rounded" />
-    <img src="/cards/palestra3.jpg" class="col-span-1  w-full object-cover rounded" />
-    <img src="cards/palestrantes.jpg" class="col-span-2 w-full object-cover rounded" />
-    <img src="cards/cartoes.jpg" class="col-span-2 w-full object-cover rounded" />
-    </div>
-    <div class="grid grid-cols-7 gap-2 md:gap-4 px-4 pt-3">
-      <img src="cards/palestra3.jpg" class="col-span-1 w-full object-cover rounded" />
-      <img src="/cards/plalestrante4.jpg" class="col-span-1  w-full object-cover rounded" />
-      <img src="/cards/jayma.jpg" class="col-span-1  w-full object-cover rounded" />
-      <img src="cards/tom_palestra.jpg" class="col-span-2 w-full object-cover rounded" />
-      <img src="cards/poupar.jpg" class="col-span-2 w-full object-cover rounded" />
-    </div>
+            <img onclick="openModal(this.src)" src="/cards/jayme2.jpg" class="col-span-2 w-full object-cover rounded cursor-pointer" />
+            <img onclick="openModal(this.src)" src="/cards/flor.jpg" class="col-span-2 w-full object-cover rounded cursor-pointer" />
+            <img onclick="openModal(this.src)" src="cards/bmouse.jpg" class="col-span-2 w-full object-cover rounded cursor-pointer" />
+            <img onclick="openModal(this.src)" src="/cards/vr.jpg" class="col-span-2 w-full object-cover rounded cursor-pointer" />
+          </div>
+          
+          <div class="grid grid-cols-7 gap-2 md:gap-4 px-4 pt-3">
+            <img onclick="openModal(this.src)" src="cards/inove.jpg" class="col-span-2 w-full object-cover rounded cursor-pointer" />
+            <img onclick="openModal(this.src)" src="/cards/povo.jpg" class="col-span-2 w-full object-cover rounded cursor-pointer" />
+            <img onclick="openModal(this.src)" src="/cards/palestra.jpg" class="col-span-1 w-full object-cover rounded cursor-pointer" />
+            <img onclick="openModal(this.src)" src="cards/plateia.jpg" class="col-span-2 w-full object-cover rounded cursor-pointer" />
+          </div>
+          
+          <div class="grid grid-cols-8 gap-2 md:gap-4 px-4 pt-3">
+            <img onclick="openModal(this.src)" src="cards/palestra2.jpg" class="col-span-2 w-full object-cover rounded cursor-pointer" />
+            <img onclick="openModal(this.src)" src="/cards/tom-palesta-micro.jpg" class="col-span-1 w-full object-cover rounded cursor-pointer" />
+            <img onclick="openModal(this.src)" src="/cards/palestra3.jpg" class="col-span-1 w-full object-cover rounded cursor-pointer" />
+            <img onclick="openModal(this.src)" src="cards/palestrantes.jpg" class="col-span-2 w-full object-cover rounded cursor-pointer" />
+            <img onclick="openModal(this.src)" src="cards/cartoes.jpg" class="col-span-2 w-full object-cover rounded cursor-pointer" />
+          </div>
+          
+          <div class="grid grid-cols-7 gap-2 md:gap-4 px-4 pt-3">
+            <img onclick="openModal(this.src)" src="cards/palestra3.jpg" class="col-span-1 w-full object-cover rounded cursor-pointer" />
+            <img onclick="openModal(this.src)" src="/cards/plalestrante4.jpg" class="col-span-1 w-full object-cover rounded cursor-pointer" />
+            <img onclick="openModal(this.src)" src="/cards/jayma.jpg" class="col-span-1 w-full object-cover rounded cursor-pointer" />
+            <img onclick="openModal(this.src)" src="cards/tom_palestra.jpg" class="col-span-2 w-full object-cover rounded cursor-pointer" />
+            <img onclick="openModal(this.src)" src="cards/poupar.jpg" class="col-span-2 w-full object-cover rounded cursor-pointer" />
+          </div>
 
     
             
@@ -316,4 +324,22 @@
     </section>
     
   </body>
+
+  <script>
+    function openModal(src) {
+      document.getElementById('modalImage').src = src;
+      document.getElementById('imageModal').classList.remove('hidden');
+    }
+  
+    function closeModal() {
+      document.getElementById('imageModal').classList.add('hidden');
+    }
+  
+    // Fechar modal clicando fora da imagem
+    document.getElementById('imageModal').addEventListener('click', function (e) {
+      if (e.target.id === 'imageModal') {
+        closeModal();
+      }
+    });
+  </script>
 </html>
