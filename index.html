@@ -18,8 +18,67 @@
   />
   </head>
   <body>
-    <header
-      class="flex flex-col md:flex-row items-center mx-auto justify-center bg-[linear-gradient(64deg,_#153F3D_23.18%,_#143837_49.48%,_#143130_73.81%,_#14302F_96.04%)] py-16 md:py-0"
+    <header class="w-full bg-white border-b border-gray-200 shadow-md fixed top-0 z-50">
+      <div class="container mx-auto px-4 py-3">
+  
+          <!-- Mobile Layout (Logo + Hamburguer) -->
+          <div class="flex items-center justify-between lg:hidden">
+              <img src="assets/icone-saude-empreende.png" alt="Logo" class="h-8">
+  
+              <button id="menu-toggle" class="lg:hidden">
+                  <svg class="w-8 h-8 text-green-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                  </svg>
+              </button>
+          </div>
+  
+          <nav id="menu" class="hidden lg:hidden flex-col absolute top-full left-0 w-full bg-white border-t shadow-lg">
+              <a href="https://saudeempreende.com.br/" class="block px-4 py-3 text-gray-700 hover:text-green-600">Home</a>
+              <a href="https://saudeempreende.com.br/sobre/" class="block px-4 py-3 text-gray-700 hover:text-green-600">Sobre</a>
+              <a href="https://saudeempreende.com.br/crieuminfoproduto/" class="block px-4 py-3 text-gray-700 hover:text-green-600">Crie um infoproduto</a>
+              <a href="https://saudeempreende.com.br/sejaumcolunista/" class="block px-4 py-3 text-gray-700 hover:text-green-600">Seja um Colunista</a>
+              <a href="https://saudeempreende.com.br/contrate-experience/" class="block px-4 py-3 text-gray-700 hover:text-green-600">Experience</a>
+              <a href="https://saudeempreende.com.br/doctalk/" class="block px-4 py-3 text-gray-700 hover:text-green-600">DocTalk</a>
+          </nav>
+  
+          <!-- Desktop Layout (Logo Central + Menu Abaixo Centralizado) -->
+          <div class="hidden lg:flex flex-col items-center">
+              <div class="flex items-center space-x-2">
+                  <img src="assets/logo-saude-empreende2.svg" alt="Logo" class="h-8">
+              </div>
+  
+              <nav class="mt-3 flex space-x-8">
+                  <a href="https://saudeempreende.com.br/" class="text-gray-700 hover:text-green-600 relative group">
+                      Home
+                      <span class="absolute left-0 bottom-0 w-full h-0.5 bg-green-500 scale-x-0 group-hover:scale-x-100 transition-transform"></span>
+                  </a>
+                  <a href="https://saudeempreende.com.br/sobre" class="text-gray-700 hover:text-green-600 relative group">
+                      Sobre
+                      <span class="absolute left-0 bottom-0 w-full h-0.5 bg-green-500 scale-x-0 group-hover:scale-x-100 transition-transform"></span>
+                  </a>
+                  <a href="https://saudeempreende.com.br/crieuminfoproduto/" class="text-gray-700 hover:text-green-600 relative group">
+                      Crie um infoproduto
+                      <span class="absolute left-0 bottom-0 w-full h-0.5 bg-green-500 scale-x-0 group-hover:scale-x-100 transition-transform"></span>
+                  </a>
+                  <a href="https://saudeempreende.com.br/sejaumcolunista/" class="text-gray-700 hover:text-green-600 relative group">
+                      Seja um Colunista
+                      <span class="absolute left-0 bottom-0 w-full h-0.5 bg-green-500 scale-x-0 group-hover:scale-x-100 transition-transform"></span>
+                  </a>
+                  <a href="https://saudeempreende.com.br/contrate-experience/" class="text-gray-700 hover:text-green-600 relative group">
+                      Experience
+                      <span class="absolute left-0 bottom-0 w-full h-0.5 bg-green-500 scale-x-0 group-hover:scale-x-100 transition-transform"></span>
+                  </a>
+                  <a href="https://saudeempreende.com.br/doctalk/" class="text-gray-700 hover:text-green-600 relative group">
+                      DocTalk
+                      <span class="absolute left-0 bottom-0 w-full h-0.5 bg-green-500 scale-x-0 group-hover:scale-x-100 transition-transform"></span>
+                  </a>
+              </nav>
+          </div>
+  
+      </div>
+  </header>
+    <section
+      class="flex flex-col md:flex-row items-center mx-auto justify-center bg-[linear-gradient(64deg,_#153F3D_23.18%,_#143837_49.48%,_#143130_73.81%,_#14302F_96.04%)] py-16 md:mt-0"
     >
       <div class="md:w-[60%] mx-auto text-center justify-center items-center">
         <img src="assets/Tom.webp" alt="" class="hidden md:block " />
@@ -27,7 +86,7 @@
       <div class="md:w-[40%] p-12">
         <img src="assets/logo.svg" alt="" class="mx-auto md:mx-0 text-center md:text-left  pt-10 lg:pt-0"/>
         <div class="pt-10 text-white  mx-auto text-center md:text-left md:mx-0">
-          <h1 class="franieBold uppercase text-4xl">
+          <h1 class="franieBold  uppercase text-4xl">
             Seja parte da <br />
             <span class="text-[#0FFF8A]">Revolução na saúde!</span>
           </h1>
@@ -51,7 +110,7 @@
           </p>
         </div>
       </div>
-    </header> 
+    </section> 
 
     <section class="md:p-16">
       
@@ -61,9 +120,11 @@
             <img src="assets/logo.svg" alt="">
             <div class="py-10 text-white">
               <h1 class="franieBold uppercase md:text-5xl text-4xl">
-                Oque é o <br />
-                <span class="text-[#0FFF8A]">Saúde Empreende Experience?</span>
+                <span class="block leading-tight">O que é o</span>
+                <span class="block leading-tight franieTitle text-[#0FFF8A]">Saúde Empreende Experience?</span>
               </h1>
+              
+              
               <div
               class="border mt-10 md:max-w-2xl"
               style="
@@ -91,7 +152,7 @@
                 O evento contempla diversos painéis que abordam temas essenciais como inovação, gestão de clínicas e novas tecnologias, incluindo o impacto do metaverso na saúde. Além de um dia repleto de aprendizado e trocas de experiências, temos uma after party especial, proporcionando um ambiente perfeito para networking.
               </p>
             </div>
-            <button class="bg-[#0FFF8A] uppercase franie text-black text-lg font-bold px-8 py-4 rounded-full mt-10 mb-16 transition duration-300 transform hover:scale-105">Contratar evento</button>
+            <button class="bg-[#0FFF8A] uppercase franie text-black text-lg font-bold px-8 py-4 rounded-full mt-10 mb-16 transition duration-300 transform hover:scale-105"><a href="https://api.whatsapp.com/send?phone=5534999306776&text=Ol%C3%A1,%20quero%20contratar%20o%20Sa%C3%BAde%20Empreende%20Experience">Contratar evento</a></button>
             </div>
           </div>
     <div class="md:w-1/2">
@@ -116,8 +177,9 @@
  
       <div class="pt-10 container mx-auto">
         <h1 class="franieBold uppercase text-5xl text-[#0FFF8A] text-center">
-          Temas abordados
-          no evento
+          <span class="text-2xl">Temas abordados</span>
+          <br>
+           <span class="text-5xl">no evento</span>
                       </h1> 
                       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-12 lg:gap-16 xl:gap-32 py-20 text-white px-10">
                         <div>
@@ -142,7 +204,7 @@
                       
                       <div class="mx-auto text-center">
 
-                        <button class="bg-[#0FFF8A] uppercase franie text-black text-lg font-bold px-8 py-4 rounded-full mt-10 mb-16 transition duration-300 transform hover:scale-105">Contratar evento</button>
+                        <button class="bg-[#0FFF8A] uppercase franie text-black text-lg font-bold px-8 py-4 rounded-full mt-10 mb-16 transition duration-300 transform hover:scale-105"><a href="https://api.whatsapp.com/send?phone=5534999306776&text=Ol%C3%A1,%20quero%20contratar%20o%20Sa%C3%BAde%20Empreende%20Experience">Contratar evento</a></button>
                       </div>
       </div>
       
@@ -199,10 +261,11 @@
     <section class="md:p-16">
       <div class="z-40 bg-[linear-gradient(64deg,_#153F3D_23.18%,_#143837_49.48%,_#143130_73.81%,_#14302F_96.04%)] border  rounded-2xl p-10 py-20">
         <div class="container mx-auto text-center">
-          <h1 class="uppercase franieBold text-[#0FFF8A] text-2xl sm:text-4xl md:text-5xl font-bold py-10 md:py-0">
-            Veja um pouco do <br>
-            <span class="text-[#00FFAE]">último evento</span>
+          <h1 class="uppercase  text-[#0FFF8A] text-2xl sm:text-4xl md:text-5xl font-bold py-10 md:py-0 ">
+            <span class="block franie leading-tight">Veja um pouco do</span>
+            <span class="block franieTitle leading-tigh text-[#0FFF8A]">último evento</span>
           </h1>
+          
     
           <!-- Imagem principal -->
           <div class="md:py-10">
@@ -257,7 +320,7 @@
           <div class="md:w-1/2 mx-auto md?p-32">
             <h1 class="text-[#153E3B] uppercase franieTitle md:text-6xl text-4xl py-5 md:py-10">JUNTE-SE A NÓS</h1>
             <p class="text-[#153E3B]  franie text-2xl">Não perca a oportunidade de se <span class="font-bold">tornar parceiro deste evento transformador.</span> Junte-se a nós no <span class="font-bold">Saúde Empreende Experience e faça a diferença no setor da saúde.</span> </p>
-            <button class="bg-[#153F3D] uppercase franie text-[#0FFF8A] text-lg font-bold px-8 py-4 rounded-full mt-10 mb-16 transition duration-300 transform hover:scale-105">Contratar evento</button>
+            <button class="bg-[#153F3D] uppercase franie text-[#0FFF8A] text-lg font-bold px-8 py-4 rounded-full mt-10 mb-16 transition duration-300 transform hover:scale-105"><a href="https://api.whatsapp.com/send?phone=5534999306776&text=Ol%C3%A1,%20quero%20contratar%20o%20Sa%C3%BAde%20Empreende%20Experience">Contratar evento</a></button>
           </div>
           <div class="md:w-1/2">
             <img src="assets/roberta.webp" class="mx-auto" alt="">
@@ -314,17 +377,18 @@
           <div class="md:w-1/2">
             <img src="assets/logo.svg" alt="">
             <div class="py-10 text-white">
-              <h1 class="franieBold text-[#0FFF8A] md:text-6xl text-5xl uppercase">
-                Está com  <br />
-                <span class="text-[#0FFF8A] franieTitle font-bold">alguma dúvida?</span>
+              <h1 class="franieBold text-[#0FFF8A] md:text-6xl text-5xl uppercase leading-tight">
+                <span class="block leading-tight">Está com</span> 
+                <span class="block leading-tight text-[#0FFF8A] franieTitle font-bold">alguma dúvida?</span>
               </h1>
+              
   
             <div class="py-10">            
               <p class="md:text-3xl franie text-2xl">
                 Envie sua dúvida pelo WhatsApp clicando no botão abaixo:
               </p>
             </div>
-            <button class="bg-[#0FFF8A] uppercase franie text-black text-lg font-bold px-8 py-4 rounded-full mt-10 mb-16 transition duration-300 transform hover:scale-105">Fale conosco</button>
+            <button class="bg-[#0FFF8A] uppercase franie text-black text-lg font-bold px-8 py-4 rounded-full mt-10 mb-16 transition duration-300 transform hover:scale-105"><a href="https://api.whatsapp.com/send?phone=5534999306776&text=Ol%C3%A1,%20quero%20contratar%20o%20Sa%C3%BAde%20Empreende%20Experience">Fale conosco</a></button>
             </div>
           </div>
     <div class="md:w-1/2">
@@ -364,6 +428,26 @@
         }
       });
     </script>
+
+<button
+id="back-to-top"
+class="fixed bottom-6 right-6 bg-black/70 text-white px-4 py-3 rounded-lg text-sm opacity-80 hover:opacity-100 transition hidden"
+>
+⬆️
+</button>
+
+<a
+id="whatsapp-button"
+href="https://api.whatsapp.com/send?phone=5534999306776&text=Ol%C3%A1,%20quero%20contratar%20o%20Sa%C3%BAde%20Empreende%20Experience"
+target="_blank"
+class="fixed bottom-6 left-6 bg-green-500 text-white px-4 py-3 rounded-full shadow-lg flex items-center gap-2 opacity-80 hover:opacity-100 transition"
+>
+<img
+  src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+  alt="WhatsApp"
+  class="w-6 h-6"
+/>
+</a>
   </body>
 
   <script>
