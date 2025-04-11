@@ -1,3 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  overflow-x: hidden !important;
+}
+
 @font-face {
   font-family: 'franie';
   src: url('fonts/franie/Franie-ExtraLight.woff2') format('woff2');
