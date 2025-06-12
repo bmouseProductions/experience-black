@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saúde Empreende</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="assets/icon-saude-empreende.svg"
+    />
+  </head>
+  <body>
+        <section class="md:p-16">
+      <div class="z-40 bg-black border  rounded-2xl p-10 py-20">
+        <div class="container mx-auto text-center">
+          <h1 class="uppercase  text-white text-2xl sm:text-4xl md:text-5xl  py-10 md:py-0 ">
+            <span class="block franie leading-tight">Veja um pouco do</span>
+            <span class="block  leading-tigh text-white">último evento</span>
+          </h1>
+          
+    
+          <!-- Imagem principal -->
+          <div class="py-10 px-4">
+  <div class="w-full max-w-2xl mx-auto shadow-lg rounded-md overflow-hidden">
+    <div class="relative pt-[56.25%]"> <!-- 16:9 aspect ratio -->
+      <iframe 
+        class="absolute top-0 left-0 w-full h-full rounded-md"
+        src="https://player.vimeo.com/video/1092200919?h=a3c0f0db86&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
+        frameborder="0" 
+        allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
+        title="[SEEPOCKET]  - TEASER DO EVENTO WIDE">
+      </iframe>
+    </div>
+  </div>
+</div>
+
+          
+          
+    
+          <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 hidden">
+            <div class="relative">
+              <button onclick="closeModal()" class="absolute top-2 right-2 text-white text-2xl">&times;</button>
+              <img id="modalImage" src="" class="max-w-[90vw] max-h-[90vh] rounded-lg shadow-lg" />
+            </div>
+          </div>
+          
+          <!-- GALERIA -->
+          <div class="grid grid-cols-8 gap-2 md:gap-4 px-4">
+            <img onclick="openModal(this.src)" src="/assets/new-event/025A2865.webp" class="col-span-2 w-full object-cover rounded cursor-pointer" />
+            <img onclick="openModal(this.src)" src="/assets/new-event/DSC03350.webp" class="col-span-2 w-full object-cover rounded cursor-pointer" />
+            <img onclick="openModal(this.src)" src="/assets/new-event/DSC03379.webp" class="col-span-2 w-full object-cover rounded cursor-pointer" />
+            <img onclick="openModal(this.src)" src="/assets/new-event/DSC03381.webp" class="col-span-2 w-full object-cover rounded cursor-pointer" />
+          </div>
+          
+          <div class="grid grid-cols-4 gap-2 md:gap-4 px-4 pt-3">
+            <img onclick="openModal(this.src)" src="/assets/new-event/DSC03789.webp" class="col-span-1 w-full object-cover rounded cursor-pointer" />
+            <img onclick="openModal(this.src)" src="/assets/new-event/DSC03799.webp" class="col-span-1 w-full object-cover rounded cursor-pointer" />
+            <img onclick="openModal(this.src)" src="/assets/new-event/DSC03730.webp" class="col-span-1 w-full object-cover rounded cursor-pointer" />
+            <img onclick="openModal(this.src)" src="/assets/new-event/DSC03744.webp" class="col-span-1 w-full object-cover rounded cursor-pointer" />
+          </div>
+          
+          <div class="grid grid-cols-4 gap-2 md:gap-4 px-4 pt-3">
+            <img onclick="openModal(this.src)" src="/assets/new-event/DSC03412.webp" class="col-span-1 w-full object-cover rounded cursor-pointer" />
+            <img onclick="openModal(this.src)" src="/assets/new-event/DSC03673.webp" class="col-span-1 w-full object-cover rounded cursor-pointer" />
+            <img onclick="openModal(this.src)" src="/assets/new-event/DSC03837.webp" class="col-span-1 w-full object-cover rounded cursor-pointer" />
+            <img onclick="openModal(this.src)" src="/assets/new-event/DSC03897.webp" class="col-span-1 w-full object-cover rounded cursor-pointer" />
+          </div>
+          
+          <div class="grid grid-cols-4 gap-2 md:gap-4 px-4 pt-3">
+            <img onclick="openModal(this.src)" src="/assets/new-event/DSC03997.webp" class="col-span-1 w-full object-cover rounded cursor-pointer" />
+            <img onclick="openModal(this.src)" src="/assets/new-event/DSC04022.webp" class="col-span-1 w-full object-cover rounded cursor-pointer" />
+            <img onclick="openModal(this.src)" src="/assets/new-event/new-image.webp" class="col-span-1 w-full object-cover rounded cursor-pointer" />
+            <img onclick="openModal(this.src)" src="/assets/new-event/third.webp" class="col-span-1 w-full object-cover rounded cursor-pointer" />
+          </div>
+
+    
+            
+          </div>
+        </div>
+      </div>
+      
+    </section>
+  </body>
+</html>
