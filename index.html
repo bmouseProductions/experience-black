@@ -106,7 +106,7 @@
       <div class="bg-black border rounded-2xl">
         <div class="flex flex-col md:flex-row mx-auto md:p-32 p-10 items-center justify-center">
           <div class="md:w-1/2">
-            <img src="assets/logo-see.svg" width="180" alt="">
+            <img src="assets/icon-logo-see.svg" width="50" alt="">
             <div class="py-10 text-white">
               <h1 class="franieBold uppercase md:text-5xl text-4xl">
                 <span class="block leading-tight">O que é o</span>
@@ -182,7 +182,7 @@
 
     <section class="py-20 mx-auto text-center">
       <div>
-        <img src="assets/icon_logo.svg" class="text-center mx-auto" alt="">
+        <img src="assets/icon-logo-see.svg" width="55" class="text-center mx-auto" alt="">
         <h1 class="md:text-6xl uppercase text-2xl md:py-10 pt-10  franieBold">Oportunidade <br><span class="font-bold">para empresas</span></h1>
         <p class="md:text-2xl franie py-10">Ao se juntar a nós <span class="font-bold">como parceiro,</span> sua empresa <span class="font-bold ">terá a oportunidade de:</span></p>
       </div>
@@ -227,7 +227,7 @@
 
     <section class="mx-auto text-center">
             <div class="text-[#153F3D]">
-        <img src="assets/icon_logo.svg" class="text-center mx-auto" alt=""> 
+        <img src="assets/icon-logo-see.svg" width="55" class="text-center mx-auto" alt=""> 
         <h1 class="md:text-6xl text-3xl py-10  text-[#153F3D] franieBold uppercase">Últimos   <br><span class=" text-[#153F3D] font-bold">eventos</span></h1>
       </div>
           <div class="carousel3 lg:mt-32 text-center mt-10">
@@ -267,7 +267,7 @@
 
     <section class="py-20 mx-auto text-center">
       <div class="text-[#153F3D]">
-        <img src="assets/icon_logo.svg" class="text-center mx-auto" alt=""> 
+        <img src="assets/icon-logo-see.svg" width="55" class="text-center mx-auto" alt=""> 
         <h1 class="md:text-6xl text-3xl py-10  text-[#153F3D] franieBold uppercase">Quem já  <br><span class=" text-[#153F3D] font-bold">palestrou no evento?</span></h1>
       </div>
       <div class="carousel2 lg:mt-32 text-center mt-10">
@@ -448,4 +448,12 @@ class="fixed bottom-6 left-6 bg-green-500 text-white px-4 py-3 rounded-full shad
       }
     });
   </script>
+  <script>
+  const toggleButton = document.getElementById('menu-toggle');
+  const menu = document.getElementById('menu');
+
+  toggleButton.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+</script>
 </html>

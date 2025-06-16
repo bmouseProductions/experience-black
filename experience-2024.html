@@ -88,12 +88,29 @@
   
       </div>
   </header>
+   <nav class="bg-white border-b border-gray-200 py-3 px-6 text-sm text-black mt-16 lg:mt-32 block lg:block" aria-label="Breadcrumb">
+  <ol class="list-none p-0 inline-flex">
+    <li class="flex items-center">
+      <a href="https://saudeempreende.com.br/" class="text-green-600 hover:underline">Home</a>
+      <svg class="h-4 w-4 mx-2 text-gray-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+      </svg>
+    </li>
+    <li class="flex items-center">
+      <a href="#" class="text-green-600 hover:underline">Experience</a>
+      <svg class="h-4 w-4 mx-2 text-gray-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+      </svg>
+    </li>
+    <li class="text-gray-500">Experience 2024</li>
+  </ol>
+</nav>
             <section class="md:p-16">
       <div class="z-40 bg-black border  rounded-2xl p-10 py-20">
         <div class="container mx-auto text-center">
           <h1 class="uppercase  text-white text-2xl sm:text-4xl md:text-5xl  py-10 md:py-0 ">
-            <span class="block franie leading-tight">Veja um pouco do</span>
-            <span class="block  leading-tigh text-white">último evento</span>
+            <span class="block franie leading-tight">Saúde Empreende </span>
+            <span class="block  leading-tigh text-white">Experience 2024</span>
           </h1>
           
     
@@ -190,5 +207,30 @@
         />
       </svg>
     </button>
+    <script>
+  const toggleButton = document.getElementById('menu-toggle');
+  const menu = document.getElementById('menu');
+
+  toggleButton.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+</script>
+      <script>
+    function openModal(src) {
+      document.getElementById('modalImage').src = src;
+      document.getElementById('imageModal').classList.remove('hidden');
+    }
+  
+    function closeModal() {
+      document.getElementById('imageModal').classList.add('hidden');
+    }
+  
+    // Fechar modal clicando fora da imagem
+    document.getElementById('imageModal').addEventListener('click', function (e) {
+      if (e.target.id === 'imageModal') {
+        closeModal();
+      }
+    });
+  </script>
   </body>
 </html>
